@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  
+    Document Title
+    =============================================
+    -->
+  <title>Pro College International</title>
+  <!--  
+    Favicons
+    =============================================
+    -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+  <!-- Default stylesheets-->
+  <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+  <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+  <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+  <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+  <!-- Main stylesheet and color file-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+    <nav class="navbar navbar-custom navbar-primary navbar-fixed-top one-page" role="navigation">
+      <div class="container">
+        <div class="navbar-header navbar">
+          <a class="navbar-brand" href="index.html"><img style="height: 40px;"
+              src="./assets/images/ProCollege_Trans_Colored.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="custom-collapse">
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="module" id="contact">
+      <div class="container justify-content-around">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h2 class="module-title font-alt">Signup for GWD 2.0 NOW</h2>
+            <div class="module-subtitle font-serif"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="contactForm" role="form" method="post" action="php/contact.php">
+              <div class="form-group"> Firstname *
+                <label class="sr-only" for="firstName">firstname</label>
+                <input class="form-control" type="text" id="firstName" name="firstName" placeholder="Your First Name*"
+                  required="required" data-validation-required-message="Please enter your name." />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group ">Email *
+                <label class="sr-only" for="email">example@mail.com</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*"
+                  required="required" data-validation-required-message="Please enter your email address." />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">Do You Live In Abuja? *
+                <select class="form-control" id="location">
+                  <option value="" selected="selected" disabled>--Select Location--</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group"> Lastname *
+              <label class="sr-only" for="lastName">lastname</label>
+              <input class="form-control" type="text" id="lastName" name="lastName" placeholder="Your Last Name*"
+                required="required" data-validation-required-message="Please enter your name." />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">Phone Number *
+              <label class="sr-only" for="number">Phone Number</label>
+              <input class="form-control" type="text" id="number" name="number" placeholder="Your Phone No*"
+                required="required" data-validation-required-message="Please enter your email address." />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">Qualification *
+              <select class="form-control w-100" id="qualification">
+                <option value="" selected="selected" disabled>--Select Qualification--</option>
+                <option value="O'level">O'Level</option>
+                <option value="Degree">Degree</option>
+                <option value="Master">Masters</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="padding: 20px;">
+          <hr class="divider-w mt-10 mb-20">
+          <h4 class="">How would you rate yourself in the following courses *</h4>
+          <h5 class="">From 1(lowest) to 10(highest)</h5>
+          <div class="col-sm-6">
+            <div class="col-sm-6 mb-sm-20">HTML *
+              <select class="form-control" id="htmlRanking">
+                <option value="" selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col-sm-6 mb-sm-50">CSS *
+              <select class="form-control" id="cssRanking">
+                <option value="" selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col-sm-6 mb-sm-20">Bootstrap *
+              <select class="form-control" id="bootstrapRanking">
+                <option value="" selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5"> 5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col-sm-6 mb-sm-20">Angular *
+              <select class="form-control" id="angularRanking">
+                <option value="" selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col-sm-6 mb-sm-20">GitHub *
+              <select class="form-control" id="githubRanking">
+                <option value="" selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col-sm-6 mb-sm-20">Git *
+              <select class="form-control" id="gitRanking">
+                <option value="" selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="col-sm-6 mb-sm-20">Javascript *
+              <select class="form-control" id="jsRanking">
+                <option value="" selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col-sm-6 mb-sm-20">Nodejs *
+              <select class="form-control" id="nodejsRanking">
+                <option value="" selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col-sm-6 mb-sm-20">Postgres *
+              <select class="form-control" id="postgresRanking">
+                <option selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col-sm-6 mb-sm-20">Mysql *
+              <select class="form-control" id="mysqlRanking">
+                <option selected="selected" disabled>--SELECT--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <hr class="divider-w mt-10 mb-20">
+          <div class="col-sm-6">
+            <div class="col-sm-6 mb-sm-20">Where did you hear about the program? *
+              <select class="form-control" id="source">
+                <option value="" selected="selected" disabled>--SELECT--</option>
+                <option value="radio">Radios</option>
+                <option value="television">Television</option>
+                <option value="social media">Social Media</option>
+                <option value="friends">Friends</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-6 mt-2">Why did you choose to sign up? *
+            <div class="form-group">
+              <textarea class="form-control" rows="7" id="message" name="message" placeholder="Why*" required="required"
+                data-validation-required-message="Please enter your message."></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center " style="margin-top: 30px;">
+          <button class=" btn btn-block btn-round btn-primary btn-d " id="submitBtn" type="button">Submit
+            <span class="spinner-border spinner-danger spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="sr-only">Loading....</span>
+        </div>
+        </form>
+
+        <div class="row" style="margin-top: 40px;">
+          <div class="col-sm-6 col-sm-offset-3" style="height: 10px;">
+            <h3 class="module-title font-alt" style="height: 5px">Follow us</h3>
+            <div class="social-links  col-sm-offset-5" style="width: auto; font-size: 30px;">
+              <a href="https://www.facebook.com/pcinaija"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/invites/contact/?i=1d5b6xie4ozsk&utm_content=3iuum20"><i
+                  class="fa fa-instagram"></i></a>
+              <a href="#"> <i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    </div>
+    <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+  </main>
+  <!--  
+    JavaScripts
+    =============================================
+    -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+  <script src="assets/lib/jquery/dist/jquery.js"></script>
+  <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/lib/wow/dist/wow.js"></script>
+  <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+  <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+  <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+  <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+  <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="assets/lib/smoothscroll.js"></script>
+  <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+  <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+  <script async="" defer=""
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/costume.js"></script>
+</body>
+
+</html>
